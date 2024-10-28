@@ -9,12 +9,10 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 @EnableEurekaClient
 @SpringBootApplication
 public class OrderServiceApplication {
-    private static final Logger LOGGER = LoggerFactory.getLogger(OrderServiceApplication.class);
+	private static final Logger LOGGER = LoggerFactory.getLogger(OrderServiceApplication.class);
 
-    public static void main(String[] args) {
-        LOGGER.debug("The order service is running .................");
-        SpringApplication.run(OrderServiceApplication.class, args);
-    }
-
-	log.info("modified main")
+	public static void main(String[] args) {
+		LOGGER.debug("The order service is running .................");
+		SpringApplication.run(OrderServiceApplication.class, args);
+	}
 }
